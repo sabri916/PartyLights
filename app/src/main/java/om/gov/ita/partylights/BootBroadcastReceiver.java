@@ -13,7 +13,7 @@ public class BootBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.i("LightParty","Lightparty Boot Broadcast receiver started");
-        Intent serviceIntent = new Intent(context, BroadcastReceiverManagerService.class);
+        Intent serviceIntent = new Intent(context, PubnubListenerService.class);
         context.startService(serviceIntent);
     }
 }

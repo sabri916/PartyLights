@@ -18,7 +18,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         //if(hour == 23 && minute == 19){
             activityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(activityIntent);
-            Intent serviceIntent = new Intent(context,BroadcastReceiverManagerService.class);
+            Intent serviceIntent = new Intent(context,PubnubListenerService.class);
             context.stopService(serviceIntent);
         //}
     }
