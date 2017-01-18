@@ -11,7 +11,7 @@
     tools:context="om.gov.ita.partylights.MainActivity">
 
     <Button
-        android:text="Join Party!!"
+        android:text="Wake up!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
