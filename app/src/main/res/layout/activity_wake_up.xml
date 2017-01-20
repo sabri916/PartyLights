@@ -7,4 +7,12 @@
     android:background="#000000"
     tools:context="om.gov.ita.partylights.WakeUpActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show about to start..."
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
