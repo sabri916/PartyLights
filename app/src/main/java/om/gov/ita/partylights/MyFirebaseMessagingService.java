@@ -19,10 +19,15 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         Log.i(TAG,"OnMessageReceived");
 
-        Intent intent = new Intent(this, LightsActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-
-
+        if(remoteMessage.getFrom().equals("/topics/wakeup")){
+            Intent intent = new Intent(this, WakeUpActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }
+        else{
+            Intent intent = new Intent(this, LightsActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }
     }
 }
