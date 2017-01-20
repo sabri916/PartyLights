@@ -29,22 +29,11 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".PubnubListenerService"
-            android:enabled="true"
-            android:exported="true" />
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
-        <receiver android:name=".BootBroadcastReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
         <activity
             android:name=".WakeUpActivity"
             android:screenOrientation="portrait" />
