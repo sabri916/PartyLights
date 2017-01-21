@@ -7,6 +7,11 @@
     android:background="#000000"
     tools:context="om.gov.ita.partylights.MainActivity">
 
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <TextView
         android:text="Thank you for downloading"
         android:layout_width="wrap_content"
