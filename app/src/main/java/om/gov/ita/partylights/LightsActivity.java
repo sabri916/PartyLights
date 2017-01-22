@@ -33,7 +33,7 @@ public class LightsActivity extends AppCompatActivity {
         final Random random = new Random(32);
 
         //0 - 108 (5 seconds of random colours)
-        for (int i=0; i < 108000 ; i += 5000) {
+        for (int i=0; i < 108000 ; i += 2500) {
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -46,7 +46,7 @@ public class LightsActivity extends AppCompatActivity {
         }
 
         //108 - 112 (2 seconds of random colours)
-        for (int i=108000; i < 112000 ; i += 2000) {
+        for (int i=108000; i < 112000 ; i += 1000) {
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -59,7 +59,7 @@ public class LightsActivity extends AppCompatActivity {
         }
 
         //112 - 205 (5 seconds of random colours)
-        for (int i=112000; i < 205000 ; i += 5000) {
+        for (int i=112000; i < 205000 ; i += 2500) {
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -72,9 +72,9 @@ public class LightsActivity extends AppCompatActivity {
         }
 
         //205 - 222 (5 seconds of b&w colours)
-        for (int i=205000; i < 222000 ; i += 5000) {
+        for (int i=205000; i < 222000 ; i += 2500) {
 
-            if(i%10000 == 0) {
+            if(i%1000 == 0) {
                 mHandler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -94,7 +94,7 @@ public class LightsActivity extends AppCompatActivity {
         }
 
         //222 - 250 (5 seconds of random colours)
-        for (int i=222000; i < 250000 ; i += 5000) {
+        for (int i=222000; i < 250000 ; i += 2500) {
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
