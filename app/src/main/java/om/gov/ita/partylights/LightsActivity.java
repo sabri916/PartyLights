@@ -105,17 +105,7 @@ public class LightsActivity extends AppCompatActivity {
                 }
             },i);
         }
-
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(LightsActivity.this, MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        },26000);
-
+        
 
 //        for (int i=5000; i < 300000 ; i += 5000) {
 //            mHandler.postDelayed(new Runnable() {
