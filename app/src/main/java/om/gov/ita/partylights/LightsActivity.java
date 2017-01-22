@@ -105,7 +105,7 @@ public class LightsActivity extends AppCompatActivity {
                 }
             },i);
         }
-        
+
 
 //        for (int i=5000; i < 300000 ; i += 5000) {
 //            mHandler.postDelayed(new Runnable() {
